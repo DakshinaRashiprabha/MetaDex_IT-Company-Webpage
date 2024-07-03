@@ -1,0 +1,379 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MetaDex | Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #6f6a6a;
+      color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      text-decoration: none;
+      color: white;
+    }
+
+    #menuToggle {
+      display: none;
+      font-size: 15px;
+      cursor: pointer;
+      order: 1;
+    }
+
+    #menuItems {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #menuItems li {
+      margin-left: 15px;
+    }
+
+    #menuItems li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      transition: background-color 0.3s;
+    }
+
+    #menuItems li a:hover {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 768px) {
+      #menuToggle {
+        display: block;
+      }
+
+      #menuItems {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 5;
+        width: 50%;
+        background-color: #333;
+        z-index: 1;
+      }
+
+      #menuItems.active {
+        display: flex;
+      }
+
+      #menuItems li {
+        margin: 8px;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- navbar starts -->
+
+    <header>
+      <a href="./index.html#home" class="logo"> MetaDex</a>
+
+      <div id="menuToggle" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul id="menuItems">
+          <li><a class="active" href="./index.html#home">Home</a></li>
+          <li><a href="./index.html#about">About us</a></li>
+          <li><a href="./index.html#skills">Technologies</a></li>
+          <li><a href="./index.html#education">Team</a></li>
+
+          <li><a href="./index.html#experience">Services</a></li>
+          <li><a href="./index.html#contact">Contact us</a></li>
+
+          <li><a href="#aformbg-outer" class="apply">Application</a></li>
+          <li>
+            <a href="./Adminlogin/index.php" class="admin"
+              ><i class="bx bx-user"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- navbar ends -->
+
+    <div class="login-root" id="formbg-outer">
+      <div
+        class="box-root flex-flex flex-direction--column"
+        style="min-height: 100vh; flex-grow: 1"
+      >
+        <div class="loginbackground box-background--white padding-top--64">
+          <div class="loginbackground-gridContainer">
+            <div
+              class="box-root flex-flex"
+              style="grid-area: top / start / 8 / end"
+            >
+              <div
+                class="box-root"
+                style="
+                  background-image: linear-gradient(
+                    white 0%,
+                    rgb(247, 250, 252) 33%
+                  );
+                  flex-grow: 1;
+                "
+              ></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5">
+              <div
+                class="box-root box-divider--light-all-2 animationLeftRight tans3s"
+                style="flex-grow: 1"
+              ></div>
+            </div>
+            <div
+              class="box-root flex-flex"
+              style="grid-area: 6 / start / auto / 2"
+            >
+              <div
+                class="box-root box-background--blue800"
+                style="flex-grow: 1"
+              ></div>
+            </div>
+            <div
+              class="box-root flex-flex"
+              style="grid-area: 7 / start / auto / 4"
+            >
+              <div
+                class="box-root box-background--blue animationLeftRight"
+                style="flex-grow: 1"
+              ></div>
+            </div>
+            <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6">
+              <div
+                class="box-root box-background--gray100 animationLeftRight tans3s"
+                style="flex-grow: 1"
+              ></div>
+            </div>
+            <div
+              class="box-root flex-flex"
+              style="grid-area: 2 / 15 / auto / end"
+            >
+              <div
+                class="box-root box-background--cyan200 animationRightLeft tans4s"
+                style="flex-grow: 1"
+              ></div>
+            </div>
+            <div
+              class="box-root flex-flex"
+              style="grid-area: 3 / 14 / auto / end"
+            >
+              <div
+                class="box-root box-background--blue animationRightLeft"
+                style="flex-grow: 1"
+              ></div>
+            </div>
+            <div
+              class="box-root flex-flex"
+              style="grid-area: 4 / 17 / auto / 20"
+            >
+              <div
+                class="box-root box-background--gray100 animationRightLeft tans4s"
+                style="flex-grow: 1"
+              ></div>
+            </div>
+            <div
+              class="box-root flex-flex"
+              style="grid-area: 5 / 14 / auto / 17"
+            >
+              <div
+                class="box-root box-divider--light-all-2 animationRightLeft tans3s"
+                style="flex-grow: 1"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-root padding-top--24 flex-flex flex-direction--column"
+          style="flex-grow: 1; z-index: 9"
+        >
+          <div
+            class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center"
+          >
+            <h1>
+              <a href="" rel="dofollow">Application</a>
+            </h1>
+          </div>
+
+          <div class="formbg-outer" id="formbg-outer">
+            <div class="formbg">
+              <div class="formbg-inner padding-horizontal--48">
+                <form
+                  id="stripe-login"
+                  action="upload.php"
+                  method="post"
+                  enctype="multipart/form-data"
+                >
+                  <div class="field padding-bottom--24">
+                    <label for="fname">First Name</label>
+                    <input type="fname" name="fname" />
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="lname">Last Name</label>
+                    <input type="lname" name="lname" />
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" />
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="mobile">Mobile</label>
+                    <input type="mobile" name="mobile" />
+                  </div>
+
+                  <div class="field padding-bottom--24">
+                    <label for="cv">Upload CV</label>
+                    <input type="file" name="pdfFile" id="pdfFile" />
+                  </div>
+
+                  <div
+                    class="field field-checkbox padding-bottom--24 flex-flex align-center"
+                  ></div>
+                  <div class="field padding-bottom--24">
+                    <input type="submit" name="submit" value="Submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="footer-link padding-top--24">
+              <div
+                class="listing padding-top--24 padding-bottom--24 flex-flex center-center"
+              >
+                <span><a href="#">© MetaDex</a></span>
+                <span><a href="#">Contact</a></span>
+                <span><a href="#">Privacy & terms</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>MetaDex Technologies</h3>
+          <p>
+            Thank you for visiting our MetaDex MetaDex Technologies website.
+            Connect with us over socials. <br />
+            <br />
+            Keep Rising 🚀. Connect with us over live chat!
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+          <a href="#about"
+            ><i class="fas fa-chevron-circle-right"></i> About us</a
+          >
+          <a href="#skills"
+            ><i class="fas fa-chevron-circle-right"></i> Technologies</a
+          >
+          <a href="#education"
+            ><i class="fas fa-chevron-circle-right"></i> Team</a
+          >
+          <a href="#work"
+            ><i class="fas fa-chevron-circle-right"></i> Portfolio</a
+          >
+          <a href="#experience"
+            ><i class="fas fa-chevron-circle-right"></i> Services</a
+          >
+          <a href="#contact"
+            ><i class="fas fa-chevron-circle-right"></i> Contact us</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+          <p><i class="fas fa-envelope"></i>metadex@gmail.com</p>
+          <p><i class="fas fa-map-marked-alt"></i>Nugegoda, Colombo</p>
+          <div class="share">
+            <a
+              href=""
+              class="fab fa-linkedin"
+              aria-label="LinkedIn"
+              target="_blank"
+            ></a>
+            <a
+              href=""
+              class="fab fa-github"
+              aria-label="GitHub"
+              target="_blank"
+            ></a>
+            <a
+              href=""
+              class="fas fa-envelope"
+              aria-label="Mail"
+              target="_blank"
+            ></a>
+            <a
+              href=""
+              class="fab fa-twitter"
+              aria-label="Twitter"
+              target="_blank"
+            ></a>
+            <a
+              href=""
+              class="fab fa-telegram-plane"
+              aria-label="Telegram"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document
+        .getElementById("menuToggle")
+        .addEventListener("click", function () {
+          var menuItems = document.getElementById("menuItems");
+          if (menuItems.style.display === "flex") {
+            menuItems.style.display = "none";
+          } else {
+            menuItems.style.display = "flex";
+          }
+        });
+    </script>
+  </body>
+</html>

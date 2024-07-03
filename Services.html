@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="./Images/image1.png" type="image/x-icon">
+
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- <script>
+        document.querySelector('.navback').addEventListener('click', function() {
+            window.location.href = './index.html#certification';
+        });
+    </script> -->
+
+    <style>
+        
+* {
+            
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: hsl(221, 60%, 78%);
+        }
+        a{
+            text-decoration: none;
+        }
+        legend {
+            color: rgb(234, 231, 231);
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        fieldset {
+            font-family: 'Times New Roman', Times;
+            margin: 25px;
+        }
+
+        @keyframes animate {
+            0% {
+                width: 100px;
+            }
+
+            50% {
+                width: 200px;
+            }
+
+            100% {
+                width: 100px;
+            }
+        }
+
+    
+        .card {
+            background-color: hsl(0, 2%, 32%);
+            border: 1px solid hsl(204, 80%, 73%);
+            padding: 8px;
+            border-radius: 12px;
+            width: 300px;
+            height: 420px;
+            margin: 25px;
+            display: inline-block;
+            box-sizing: border-box;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .tag {
+            padding: 4px 8px;
+            border: 1px solid #201f1f;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #3c3c3c;
+            background-color:hsl(208, 26%, 61%);
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 600;
+            background-color:hsl(199, 28%, 63%);
+            margin-top: 16px;
+            border-radius: 11px;
+        }
+
+        .btn {
+            border: none;
+            padding: 14px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            color: rgb(81, 68, 68);
+            border: 1px solid hsl(351, 3%, 45%);
+            background-color: rgb(92, 88, 88);
+            transition: all 0.2s;
+            margin: 0 auto;
+            display: block;
+            cursor: pointer;
+
+        }
+        .link-btn{
+            text-decoration: none;
+            background-color:#74706f;
+
+        }
+        .btn:hover {
+            color:#171616;
+            background-color: hsl(330, 1%, 50%);
+            box-shadow: 0 10px 15px rgb(144, 143, 143);
+        }
+
+        .card__details {
+            padding: 6px 8px 22px 8px;
+            background-color:hsl(206, 28%, 68%);
+            border-radius: 12px;
+        
+
+        }
+        .container {
+            
+            justify-content: space-around;
+            padding: 50px 0;
+         }
+
+.copyrights {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.back_{
+    color:white;
+    font-size: 1.25rem;
+}
+.nav__menu {
+    position: fixed;
+  bottom: 1rem;
+  background-color: rgb(143, 145, 146);
+  width: 9%;
+  border-radius: 4rem;
+  padding: 0.9rem 2rem 0.9rem 2rem;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav__menu:hover{
+    background-color: rgb(91, 88, 88);
+}
+.nav__list {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav__link  {
+  
+  font-size: 1.25rem;
+  padding: 0.4rem;
+  display: flex;
+  border-radius: 5rem;
+  
+}
+
+.nav__item {
+  cursor: pointer;
+}
+.navback{
+    color:rgba(11, 17, 30, 1) ;
+    font: 1.2rem;
+}
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+/*small devices*/
+@media screen and (max-width: 320px) {
+    .nav__list{
+        align-items: auto;
+  justify-content: auto; 
+    }
+    .nav__menu{
+        width:5%; 
+        padding: 0.5rem 0rem 0.5rem 0.2rem;
+    }
+    
+    
+}
+
+/*medium devices*/
+@media screen and (max-width: 576px) {
+    .nav__list{
+        align-items: auto;
+  justify-content: auto; 
+    }
+    .nav__menu{
+        width:15%; 
+        padding: 0.5rem 0rem 0.5rem 0.2rem;
+    }
+    .nav__link  {
+  
+    font-size: auto;
+    }
+ 
+}
+@media screen and (min-width: 767px) {
+    .nav__list{
+        align-items: auto;
+  justify-content: auto; 
+    }
+    .nav__menu{
+        width:12%; 
+        padding: 0.5rem 0rem 0.5rem 0.4rem;
+    }
+    .nav__link  {
+  
+    font-size: auto;
+    }
+}
+/*Large devices*/
+@media screen and (min-width: 992px) {
+    .nav__list{
+        align-items: auto;
+  justify-content: auto; 
+    }
+    .nav__menu{
+        width:9%; 
+        padding: 0.7rem 0rem 0.7rem 2.5rem;
+    }
+    
+}
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="nav__menu">
+        <ul class="nav__list">
+                <a href="./index.html#experience" class="nav__link active-link"> 
+                    <i class='bx bxs-left-arrow'></i> 
+                    
+                </a>
+        </ul>
+    </div>
+  
+     <fieldset>
+        
+        <legend class="cetificate_123"> Services</legend>
+        <div class="container1">
+            <br>
+            <div class="container">
+                <div class="card">
+                    
+                    <div class="card__details">
+                        <div class="name">Web Development | Front End Development</div>
+                        <br>
+                        <span class="tag">React,Angular,Vue Js</span>
+                        <br><br>
+                        This focuses on building the user interface (UI) and user experience (UX) using HTML, CSS, and JavaScript. Front-end developers collaborate with designers to implement visual designs, ensuring accessibility and user-friendliness. They utilize frameworks like React, Angular, and Vue.js to streamline development, with each offering unique advantages in performance, flexibility, and community support. Choosing the right framework depends on project requirements, development team expertise.
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card__details">
+                        <div class="name">Web Development | Back End Development</div>
+                        <br>
+                        <span class="tag">Node Js, Express, MongoDB</span>
+                        <br><br>
+                        This involves server-side programming, often using technologies like Node.js, Express, and MongoDB. Node.js facilitates JavaScript-based server programming, allowing developers to use a familiar language across the entire stack. Express provides a robust framework for building web applications, streamlining development and enhancing efficiency. MongoDB offers a flexible NoSQL database solution, accommodating diverse data structures and scaling requirements. Together, these tools empower developers.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__details">
+                        <div class="name">App Development | Full-Stack App Development</div>
+                        <br>
+                        <span class="tag">React-Native, Flutter</span>
+                        <br><br>
+                        This involves creating software applications for various platforms, encompassing both front-end and back-end development. Full-stack app development combines these aspects to deliver comprehensive solutions. React Native and Flutter stand out as popular frameworks for building cross-platform mobile applications. React Native leverages JavaScript and React, providing a familiar environment for developers to craft dynamic interfaces. In contrast, Flutter offers a unified codebase, enabling the development.
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card__details">
+                        <div class="name">UI/UX Design |Front End Development</div>
+                        <br>
+                        <span class="tag">Figma, Canva, Photoshop</span>
+                        <br><br>
+                        UI/UX design centers on enhancing user satisfaction through intuitive interactions and engaging visuals. Figma, Canva, and Photoshop emerge as leading tools in the UI/UX design realm. Figma stands out with its collaborative capabilities, fostering teamwork in design projects. Canva simplifies the design process with its user-friendly templates, catering to both novice and experienced designers. Meanwhile, Photoshop remains unparalleled in graphic and photo editing prowess, offering advanced features to refine and polish designs.
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card__details">
+                        <div class="name">Software Development | Develope Requested Software</div>
+                        <br>
+                        <span class="tag">Java, Python, C#, C</span>
+                        <br><br>
+                        This involves creating and maintaining software applications to meet specific user needs. Java, Python, C#, and C are popular programming languages used in software development. Java is known for its platform independence and versatility, Python for its simplicity and readability, C# for its integration with Microsoft technologies, and C for its efficiency and low-level programming capabilities. Each language offers unique features and advantages, enabling developers to build robust and efficient software tailored to different requirements.
+                    </div>
+                </div>
+
+                <div class="card">
+                    
+                    <div class="card__details">
+                        <div class="name">Android Development | Internship</div>
+                        <br>
+                        <span class="tag">Knowkledge</span>
+                        <br><br>
+                        This is the process of designing, building, and maintaining applications for devices running the Android operating system. An internship in Android development offers aspiring developers a comprehensive learning experience in mobile app development. Interns gain hands-on experience with programming languages like Java or Kotlin, development tools such as Android Studio, SDK. This internship covers various aspects of app development, including UI/UX design, and backend integration. 
+                    </div>
+                </div>
+
+                
+                </container>
+    </fieldset>
+       
+    
+        <div class="copyrights">
+            <p>
+                &#169;2024 MetaDex | All rigths reserved. 
+            </p>
+    
+        </div>  
+        
+</body>
+
+</html>
